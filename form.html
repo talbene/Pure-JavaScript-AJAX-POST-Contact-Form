@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<title>Contact Form</title>
+	<meta name="author" content="Elliot J. Reed" />
+	<meta name="description" content="An example of an HTML form using pure JavaScript AJAX to post data to PHP. This example is a contact form, using PHP's mail function to send the email to a specified email address." />
+</head>
+
+<body>
+
+	<header role="banner">
+		<h1>HTML / JavaScript / AJAX / PHP Form</h1>
+		<p>An example of a HTML form using pure JavaScript AJAX to post data to PHP. This example is a contact form, using PHP's <code>mail</code> function to send the email to a specified email address.</p>
+	</header>
+
+	<main role="main">
+
+		<section>
+
+			<h2>Your Details</h2>
+
+			<div id="response"></div>
+
+			<form name="contact-form" id="contact">
+
+				<label for="first_name">First Name</label>
+				<input id="first_name" type="text" placeholder="First Name" pattern="[0-9A-Za-z\- ]+" title="Please enter a valid first name." required="required" />
+
+				<label for="last_name">Last Name</label>
+				<input id="last_name" type="text" placeholder="Last Name" pattern="[A-Za-z\- ]+" title="Please enter a valid surname / family name." required="required" />
+
+				<label for="email">Email Address</label>
+				<input id="email" type="email" placeholder="Email Address" required="required" />
+
+				<label for="website">Website (Optional)</label>
+				<input id="website" type="url" placeholder="Website" title="Please enter a valid URL (must begin with 'http://' or 'https://')." />
+
+				<label for="phone">Telephone Number (Landline or Mobile)</label>
+				<input id="phone" type="tel" placeholder="Telephone Number" />
+
+				<label for="message">Message</label>
+				<textarea id="message" placeholder="Enter your message here..." form="contact" required="required"></textarea>
+
+				<button type="submit">Submit</button>
+			</form>
+
+		</section>
+
+	</main>
+
+</body>
+</html>
